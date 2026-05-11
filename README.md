@@ -86,7 +86,7 @@ Accounts methodology.
 | **REUSE 3.0** (DEP5) | `reuse lint` clean | [`.reuse/dep5`](.reuse/dep5) |
 | **GDPR** (Regulation (EU) 2016/679) | No personal data in repository | [`docs/gdpr.md`](docs/gdpr.md) |
 | **DPIA** (Article 35) | Threshold analysis documented | [`docs/dpia-summary.md`](docs/dpia-summary.md) |
-| **EC OSS Strategy** 2020--2023 | Six principles documented | [`docs/eu-compliance.md`](docs/eu-compliance.md) |
+| **EC OSS Strategy** 2020-2023 | Six principles documented | [`docs/eu-compliance.md`](docs/eu-compliance.md) |
 | **Interoperable Europe Act** (EU) 2024/903 | EIF layers documented | [`docs/eu-compliance.md`](docs/eu-compliance.md) |
 | **OSOR** good practice | Catalogue metadata | [`docs/osor.md`](docs/osor.md) |
 | **FAIR4RS** | Self-assessment | [`docs/fair4rs.md`](docs/fair4rs.md) |
@@ -283,7 +283,7 @@ income, wealth, taxation, inequality, and intergenerational mobility in Sweden.
 This project is licensed under the
 [European Union Public Licence, version 1.2 (EUPL-1.2)](LICENSE).
 
-Copyright 2025--2026 Dr. Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom
+Copyright 2025-2026 Dr. Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom
 Imanov, MD, RA, PhD (ORCID [0009-0006-5184-0810](https://orcid.org/0009-0006-5184-0810)),
 Department of Economics, Stockholm University.
 
