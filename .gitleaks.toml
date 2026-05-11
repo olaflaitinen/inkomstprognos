@@ -1,0 +1,44 @@
+title = "Gitleaks configuration for Inkomstprognos"
+
+[allowlist]
+description = "Allowlisted patterns"
+paths = [
+    '''tests/.*''',
+    '''data/synthetic/.*''',
+]
+regexes = [
+    '''olaf\.laitinen@su\.se''',
+    '''olaf\.laitinen@gmail\.com''',
+]
+
+[[rules]]
+id = "swedish-personnummer"
+description = "Swedish personnummer (YYYYMMDD-XXXX)"
+regex = '''\b(19|20)\d{6}[-]\d{4}\b'''
+tags = ["pii", "personnummer"]
+
+[[rules]]
+id = "swedish-organisationsnummer"
+description = "Swedish organisationsnummer"
+regex = '''\b\d{6}[-]\d{4}\b'''
+tags = ["pii", "organisationsnummer"]
+
+[[rules]]
+id = "iban"
+description = "IBAN number"
+regex = '''\b[A-Z]{2}\d{2}[A-Z0-9]{4}\d{7}([A-Z0-9]?){0,16}\b'''
+tags = ["pii", "financial"]
+
+[[rules]]
+id = "email-personal"
+description = "Personal email addresses of named individuals"
+regex = '''\b[a-zA-Z0-9._%+-]+@(?!su\.se|gmail\.com)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'''
+tags = ["pii", "email"]
+[rules.allowlist]
+paths = [
+    '''CITATION\.cff''',
+    '''\.zenodo\.json''',
+    '''NOTICE''',
+    '''\.reuse/dep5''',
+    '''pyproject\.toml''',
+]

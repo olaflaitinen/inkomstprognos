@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Inkomstprognos
+Upstream-Contact: olaf.laitinen@su.se
+Source: https://github.com/olaflaitinen/inkomstprognos
+
+Files: *
+Copyright: 2025-2026 Dr. Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom Imanov, MD, RA, PhD <olaf.laitinen@su.se> (ORCID 0009-0006-5184-0810), Department of Economics, Stockholm University
+License: EUPL-1.2
+
+Files: data/synthetic/*
+Copyright: 2025-2026 Dr. Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom Imanov, MD, RA, PhD <olaf.laitinen@su.se> (ORCID 0009-0006-5184-0810), Department of Economics, Stockholm University
+License: CC0-1.0
+
+Files: docs/*.md docs/**/*.md
+Copyright: 2025-2026 Dr. Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom Imanov, MD, RA, PhD <olaf.laitinen@su.se> (ORCID 0009-0006-5184-0810), Department of Economics, Stockholm University
+License: CC-BY-4.0

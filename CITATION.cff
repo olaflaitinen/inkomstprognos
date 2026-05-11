@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Inkomstprognos: probabilistic disposable-income forecasting on Swedish administrative microdata"
+version: "0.1.0"
+date-released: "2026-05-11"
+license: EUPL-1.2
+repository-code: "https://github.com/olaflaitinen/inkomstprognos"
+url: "https://github.com/olaflaitinen/inkomstprognos"
+type: software
+authors:
+  - family-names: "Laitinen-Fredriksson Lundstrom Imanov"
+    given-names: "Gustav Olaf Yunus"
+    name-suffix: "MD, RA, PhD"
+    email: "olaf.laitinen@su.se"
+    affiliation: "Department of Economics, Stockholm University"
+    orcid: "https://orcid.org/0009-0006-5184-0810"
+keywords:
+  - "income forecasting"
+  - "Sweden"
+  - "LISA"
+  - "microsimulation"
+  - "Bayesian state space"
+  - "conformal prediction"
+  - "EUPL-1.2"
+  - "OSOR"
+  - "Interoperable Europe"
+  - "FAIR4RS"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PLACEHOLDER"
+    description: "Zenodo deposition (to be minted on first release)"
+preferred-citation:
+  type: software
+  title: "Inkomstprognos: probabilistic disposable-income forecasting on Swedish administrative microdata"
+  version: "0.1.0"
+  date-released: "2026-05-11"
+  license: EUPL-1.2
+  repository-code: "https://github.com/olaflaitinen/inkomstprognos"
+  authors:
+    - family-names: "Laitinen-Fredriksson Lundstrom Imanov"
+      given-names: "Gustav Olaf Yunus"
+      name-suffix: "MD, RA, PhD"
+      email: "olaf.laitinen@su.se"
+      affiliation: "Department of Economics, Stockholm University"
+      orcid: "https://orcid.org/0009-0006-5184-0810"

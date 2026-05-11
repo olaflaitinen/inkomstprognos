@@ -1,0 +1,57 @@
+{
+  "upload_type": "software",
+  "title": "Inkomstprognos: probabilistic disposable-income forecasting on Swedish administrative microdata",
+  "description": "<p>Inkomstprognos is a research-software framework for individual-level and household-level disposable-income forecasting on Swedish administrative microdata. The methodological toolbox includes gradient-boosted regression with monotonicity constraints, hierarchical Bayesian state-space models, Mondrian split-conformal prediction wrappers, target-encoded categorical features with cross-fitted leakage controls, and rolling-origin evaluation. The framework produces calibrated growth-incidence curves and counterfactual decompositions consistent with the World Inequality Lab Distributional National Accounts methodology.</p>",
+  "creators": [
+    {
+      "name": "Laitinen-Fredriksson Lundstrom Imanov, Gustav Olaf Yunus",
+      "affiliation": "Department of Economics, Stockholm University",
+      "orcid": "0009-0006-5184-0810"
+    }
+  ],
+  "license": "EUPL-1.2",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "income forecasting",
+    "Sweden",
+    "LISA",
+    "microsimulation",
+    "Bayesian state space",
+    "conformal prediction",
+    "EUPL-1.2",
+    "OSOR",
+    "Interoperable Europe",
+    "FAIR4RS",
+    "disposable income",
+    "Swedish economy",
+    "fiscal policy"
+  ],
+  "communities": [
+    {"identifier": "openaire"},
+    {"identifier": "swepub"}
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/olaflaitinen/formogenhetsanalys", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/skatteprogressivitet", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/arvsdynamik", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/mobilitetsmodellen", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/inkomstklyftan", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/pensionsrattvisa", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/kapitalinkomst", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/lonedynamik", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/hushallsekonomi", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/skattereform", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/valfardsmodellen", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/generationsskifte", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/demografiprognos", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/mikrosimulering", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/toppinkomstandelen", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/bolagsskatteanalys", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/skatteflyktsdetektor", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/formansanalys", "relation": "isPartOf", "scheme": "url"},
+    {"identifier": "https://github.com/olaflaitinen/omfordelningsmodellen", "relation": "isPartOf", "scheme": "url"}
+  ],
+  "grants": [],
+  "notes": "Licensed under EUPL-1.2. This repository contains no personal data and no real microdata. All data fixtures are synthetic and released under CC0-1.0. Part of a twenty-project research portfolio at the Department of Economics, Stockholm University."
+}

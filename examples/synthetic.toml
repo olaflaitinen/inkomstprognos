@@ -1,0 +1,8 @@
+[inkomstprognos]
+data_root = "data/synthetic"
+seed = 19960307
+horizon = 3
+outcome = "disp_income"
+model = "gbm"
+conformal = "mondrian"
+n_jobs = 1
