@@ -58,7 +58,7 @@ jobs:
           enable-cache: true
           cache-version: v1
       - run: uv python install ${{ matrix.python-version }}
-      - run: uv sync --all-extras --python ${{ matrix.python-version }}
+      - run: uv sync --extra dev --python ${{ matrix.python-version }}
       - run: >
           uv run pytest tests
           --ignore=tests/test_models_state_space.py
