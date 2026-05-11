@@ -28,6 +28,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv sync --extra dev
       - run: uv run ruff check .
       - run: uv run ruff format --check .
@@ -39,6 +40,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv sync --extra dev
       - run: uv run mypy src
 
@@ -54,6 +56,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv python install ${{ matrix.python-version }}
       - run: uv sync --extra dev --python ${{ matrix.python-version }}
       - run: >
@@ -69,6 +72,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv sync --extra dev
       - run: uv run reuse lint
 
@@ -79,6 +83,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv sync --extra dev
       - run: uv run pip-audit
       - run: uv run bandit -r src -c pyproject.toml
@@ -90,6 +95,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv lock --check
 
   docs:
@@ -99,5 +105,6 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
+          cache-version: v1
       - run: uv sync --extra dev --extra docs
       - run: uv run mkdocs build
