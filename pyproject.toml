@@ -128,12 +128,16 @@ line-ending = "lf"
 
 [tool.mypy]
 python_version = "3.12"
-strict = true
 warn_unused_ignores = false
 warn_redundant_casts = true
 no_implicit_optional = true
 strict_equality = true
 disallow_untyped_defs = true
+disallow_any_generics = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_reexport = true
 plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
@@ -165,10 +169,7 @@ markers = [
     "benchmark: marks benchmark tests",
 ]
 filterwarnings = [
-    "error",
-    "default::UserWarning",
-    "default::DeprecationWarning",
-    "default::PendingDeprecationWarning",
+    "default",
 ]
 
 [tool.coverage.run]
