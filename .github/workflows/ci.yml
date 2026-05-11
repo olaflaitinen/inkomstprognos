@@ -60,14 +60,7 @@ jobs:
           uv run pytest tests
           --ignore=tests/test_models_state_space.py
           -x -q
-          --cov=inkomstprognos
-          --cov-report=xml
-          --cov-report=term-missing
-      - uses: codecov/codecov-action@v5
-        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
-        with:
-          files: coverage.xml
-          fail_ci_if_error: false
+          --no-header
 
   reuse:
     runs-on: ubuntu-latest
