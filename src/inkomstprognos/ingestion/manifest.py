@@ -16,7 +16,7 @@ from pydantic import BaseModel
 class Manifest(BaseModel):
     """Declarative manifest describing a data source.
 
-    Args:
+    Attributes:
         name: Human-readable name of the data source.
         source: Origin identifier (e.g. SCB register name).
         version: Version string of the data source.

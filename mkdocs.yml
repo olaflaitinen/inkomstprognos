@@ -40,10 +40,13 @@ plugins:
           options:
             show_source: true
             docstring_style: google
+            show_if_no_docstring: false
 
 markdown_extensions:
   - admonition
-  - codehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - toc:
       permalink: true
   - tables

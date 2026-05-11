@@ -36,7 +36,7 @@ def set_global_seed(seed: int) -> None:
     try:
         import jax
 
-        jax.config.update("jax_enable_custom_prng", True)
+        jax.config.update("jax_enable_custom_prng", True)  # type: ignore[no-untyped-call]
     except ImportError:
         pass
 

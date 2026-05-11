@@ -123,4 +123,4 @@ class StackingEnsemble(BaseEstimator, RegressorMixin):  # type: ignore[misc]
             raise RuntimeError(msg)
 
         preds = np.column_stack([est.predict(X) for est in self._fitted_estimators])
-        return preds @ self._meta_weights
+        return np.asarray(preds @ self._meta_weights)

@@ -46,6 +46,12 @@ def _iter_text_files() -> list[pathlib.Path]:
             continue
         if ".venv" in p.parts or ".nox" in p.parts:
             continue
+        if "site" in p.parts:
+            continue
+        if ".ruff_cache" in p.parts or ".pytest_cache" in p.parts:
+            continue
+        if ".benchmarks" in p.parts:
+            continue
         if "__pycache__" in p.parts:
             continue
         if p.suffix in BINARY_EXTENSIONS:

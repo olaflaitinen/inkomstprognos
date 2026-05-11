@@ -93,7 +93,7 @@ def equivalise(
             + (df["n_adults"].cast(pl.Float64) - 1.0) * 0.5
             + df["n_children"].cast(pl.Float64) * 0.3
         )
-        equiv = df["disp_income"] / oecd_weight
+        equiv = df["disp_income"] / oecd_weight  # type: ignore[assignment]
         return df.with_columns(equiv.alias("equiv_income"))
 
     msg = f"Unknown equivalence scale: {scale!r}"

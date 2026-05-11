@@ -5,6 +5,7 @@ from __future__ import annotations
 import pathlib
 
 import matplotlib
+import matplotlib.figure
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -40,7 +41,7 @@ class FigureBuilder:
         title: str = "Forecast",
         ylabel: str = "Income (SEK)",
         output: pathlib.Path | None = None,
-    ) -> plt.Figure:
+    ) -> matplotlib.figure.Figure:
         """Create a fan chart showing forecast intervals.
 
         Args:
@@ -89,7 +90,7 @@ class FigureBuilder:
         *,
         title: str = "Calibration",
         output: pathlib.Path | None = None,
-    ) -> plt.Figure:
+    ) -> matplotlib.figure.Figure:
         """Create a calibration (reliability) diagram.
 
         Args:

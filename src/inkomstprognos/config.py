@@ -16,7 +16,7 @@ from pydantic import BaseModel, Field
 class Config(BaseModel):
     """Application configuration for Inkomstprognos.
 
-    Args:
+    Attributes:
         data_root: Root directory for input data.
         seed: Random seed for reproducibility.
         horizon: Forecast horizon in years (1, 3, or 5).

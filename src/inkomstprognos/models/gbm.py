@@ -132,7 +132,7 @@ class MonotonicGBM(BaseEstimator, RegressorMixin):  # type: ignore[misc]
         if self._model is None:
             msg = "Model has not been fitted"
             raise RuntimeError(msg)
-        return np.asarray(self._model.predict(X))  # type: ignore[union-attr]
+        return np.asarray(self._model.predict(X))  # type: ignore[attr-defined]
 
     def predict_quantile(self, X: np.ndarray, q: float) -> np.ndarray:
         """Predict a specific quantile using the fitted model.

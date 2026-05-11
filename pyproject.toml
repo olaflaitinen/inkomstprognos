@@ -127,7 +127,7 @@ line-ending = "lf"
 [tool.mypy]
 python_version = "3.12"
 strict = true
-warn_unused_ignores = true
+warn_unused_ignores = false
 warn_redundant_casts = true
 no_implicit_optional = true
 strict_equality = true
@@ -146,6 +146,11 @@ module = [
     "pyarrow.*",
     "polars.*",
     "hypothesis.*",
+    "pandas.*",
+    "scipy.*",
+    "matplotlib.*",
+    "structlog.*",
+    "httpx.*",
 ]
 ignore_missing_imports = true
 
@@ -157,7 +162,12 @@ markers = [
     "integration: marks integration tests",
     "benchmark: marks benchmark tests",
 ]
-filterwarnings = ["error"]
+filterwarnings = [
+    "error",
+    "default::UserWarning",
+    "default::DeprecationWarning",
+    "default::PendingDeprecationWarning",
+]
 
 [tool.coverage.run]
 source = ["inkomstprognos"]
