@@ -106,5 +106,5 @@ jobs:
         with:
           enable-cache: true
           cache-version: v1
-      - run: uv sync --all-extras --extra docs
+      - run: uv sync --extra docs
       - run: uv run mkdocs build
